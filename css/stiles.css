@@ -45,6 +45,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 /*______________HEADER___________*/
 .logo {
   font-size: 15px;
@@ -79,6 +80,10 @@ body {
   align-items: center;
   padding-bottom: 30px;
   padding-top: 30px;
+}
+.header-top {
+  position: absolute;
+  width: 100%;
 }
 .nav-item:not(:last-child) {
   margin-right: 50px;
@@ -124,4 +129,52 @@ body {
 }
 .hero {
   padding: 240px 0 270px 0;
+  max-width: 1440px;
+  border-color: black;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(../images/heder-photo.jpg);
+}
+/*______________WORK______________*/
+
+.work-title {
+  font-size: 41px;
+  line-height: 1.22;
+  text-align: center;
+  color: var(--font-color-light-theme);
+}
+.work-text {
+  font-size: 12px;
+  line-height: 2.5;
+  text-align: center;
+  color: #737373;
+}
+.work-btn {
+  font-size: 23px;
+  line-height: 1.65;
+  text-align: center;
+  color: var(--font-color-light-theme);
+  background-color: transparent;
+  border: none;
+}
+.work-subtitle {
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--font-color-light-theme);
+}
+.work-stages {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--main-text-color);
+}
+.work-contact-btn {
+  font-size: 15px;
+  line-height: 2;
+  color: var(--font-color-dark-theme);
+  background-color: #0a8bfe;
+  border-radius: 4px;
+  padding: 15px 49px;
+}
+.active {
+  color: var(--font-color-accent);
 }
