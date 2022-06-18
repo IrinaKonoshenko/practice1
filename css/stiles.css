@@ -36,7 +36,6 @@ img {
 }
 body {
   font-family: var(--primary-font-family);
-  background-color: tomato;
 }
 .container {
   width: 1190px;
@@ -136,18 +135,29 @@ body {
   background-image: url(../images/heder-photo.jpg);
 }
 /*______________WORK______________*/
+.work {
+  padding: 150px 0;
+  text-align: center;
+}
 
 .work-title {
   font-size: 41px;
   line-height: 1.22;
   text-align: center;
   color: var(--font-color-light-theme);
+  margin-bottom: 35px;
 }
 .work-text {
   font-size: 12px;
   line-height: 2.5;
   text-align: center;
   color: #737373;
+  margin-bottom: 85px;
+}
+.work-btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 .work-btn {
   font-size: 23px;
@@ -157,10 +167,14 @@ body {
   background-color: transparent;
   border: none;
 }
+.work-btn-item:not(:last-child) {
+  margin-right: 100px;
+}
 .work-subtitle {
   font-size: 20px;
   line-height: 1.4;
   color: var(--font-color-light-theme);
+  margin-bottom: 23px;
 }
 .work-stages {
   font-size: 16px;
@@ -168,13 +182,73 @@ body {
   color: var(--main-text-color);
 }
 .work-contact-btn {
+  display: inline-block;
   font-size: 15px;
   line-height: 2;
   color: var(--font-color-dark-theme);
   background-color: #0a8bfe;
   border-radius: 4px;
   padding: 15px 49px;
+
+  margin-top: 50px;
 }
 .active {
   color: var(--font-color-accent);
+}
+.work-stages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -40px;
+  margin-bottom: -40px;
+}
+.work-item {
+  width: 560px;
+  border: 1px solid #e8e8e8;
+  padding: 38px 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+/*______________RESOURCES______________*/
+.resources-title {
+  font-size: 42px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--font-color-light-theme);
+  margin-bottom: 35px;
+}
+.resources-subtitle {
+  font-size: 14px;
+  line-height: 2.14;
+  text-align: center;
+  color: var(--main-text-color);
+  margin-bottom: 76px;
+}
+.resources-item-title {
+  font-size: 24px;
+  line-height: 1.58;
+  color: var(--font-color-light-theme);
+  margin-bottom: 10px;
+}
+.resources-item-description {
+  font-size: 12px;
+  line-height: 2.5;
+  color: var(--main-text-color);
+}
+.resources {
+  padding: 150px 0px 160px 0px;
+}
+.resources-list {
+  display: flex;
+  padding: 0 10px;
+  gap: 30px;
+}
+.resources-item {
+  width: calc((100% - 60px) / 3);
+
+  padding: 10px;
+}
+.resources-wrap {
+  margin-top: 10px;
+  padding: 30px 40px;
 }
